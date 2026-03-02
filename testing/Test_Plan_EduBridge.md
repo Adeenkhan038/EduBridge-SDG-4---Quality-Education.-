@@ -22,9 +22,22 @@ Features to be tested:
 - Booking system
 - Notification system
 
-#4.Testing participants
+#4.Testing categories
+
+- Testing Functionality 
+- Testing Usability
+
+#5.Testing participants
 
 - Students
 - Tutor
 
-#5. 
+#6.Tools involved in the process
+
+- EduBridge prototype
+- Trello(task management)
+
+#7.Testing Schedule
+
+-Eg.Testing conductied on:20.March.2026 
+- Github(version tracking)

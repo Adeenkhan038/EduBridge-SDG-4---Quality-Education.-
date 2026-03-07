@@ -1,137 +1,145 @@
 Use Case Description
 
-ACTORS
+**ACTORS**
 
-    Student (Primary Actor - High School Student from rural area)
-    Tutor (Primary Actor - University Student Volunteer)
-    System (Supporting Actor - Automated processes)
+- **Student** (Primary Actor - High School Student from rural area)
+- **Tutor** (Primary Actor - University Student Volunteer)
+- **System** (Supporting Actor - Automated processes)
 
-USE CASES BY MODULE
+**USE CASES BY MODULE**
 
-1. AUTHENTICATION & REGISTRATION MODULE
-Use Case ID 	Use Case Name 	Actor(s) 	Description
-UC-01 	View Platform Information 	Student, Tutor, Visitor 	View landing page with SDG 4 information, features, and impact metrics
-UC-02 	Select User Role 	Student, Tutor 	Choose between "Student" or "Tutor" role during registration
-UC-03 	Complete Student Profile Setup 	Student 	Multi-step form: Basic info (name, grade, school, location) → Select subjects of interest
-UC-04 	Complete Tutor Profile Setup 	Tutor 	Multi-step form: Basic info (name, university, year, major) → Select subjects to teach → Write bio
-UC-05 	Navigate to Dashboard 	Student, Tutor, System 	After profile completion, redirect to appropriate dashboard
+**1\. AUTHENTICATION & REGISTRATION MODULE**
 
-2. STUDENT MODULE
-Use Case ID 	Use Case Name 	Actor(s) 	Description
-UC-06 	View Student Dashboard 	Student 	View overview with stats: upcoming sessions, completed sessions, active tutors
-UC-07 	Browse Tutors 	Student 	View grid of available tutors with their profiles
-UC-08 	Search Tutors 	Student 	Search tutors by name or subject
-UC-09 	Filter Tutors by Subject 	Student 	Filter tutor list by specific STEM subject
-UC-10 	View Tutor Profile 	Student 	View detailed tutor information: bio, subjects, rating, sessions completed, availability
-UC-11 	Request Session 	Student 	Send session request to a tutor for specific subject/topic
-UC-12 	View My Sessions 	Student 	View all sessions (upcoming and completed) in tabbed interface
-UC-13 	Join Session 	Student 	Enter virtual tutoring session at scheduled time
-UC-14 	Reschedule Session 	Student 	Request to change session date/time
-UC-15 	Cancel Session 	Student 	Cancel an upcoming session
-UC-16 	Book Session Again 	Student 	Rebook with same tutor after completed session
-UC-17 	Leave Review 	Student 	Rate and review tutor after completed session
+| **Use Case ID** | **Use Case Name** | **Actor(s)** | **Description** |
+| --- | --- | --- | --- |
+| UC-01 | View Platform Information | Student, Tutor, Visitor | View landing page with SDG 4 information, features, and impact metrics |
+| UC-02 | Select User Role | Student, Tutor | Choose between "Student" or "Tutor" role during registration |
+| UC-03 | Complete Student Profile Setup | Student | Multi-step form: Basic info (name, grade, school, location) → Select subjects of interest |
+| UC-04 | Complete Tutor Profile Setup | Tutor | Multi-step form: Basic info (name, university, year, major) → Select subjects to teach → Write bio |
+| UC-05 | Navigate to Dashboard | Student, Tutor, System | After profile completion, redirect to appropriate dashboard |
 
-3. TUTOR MODULE
-Use Case ID 	Use Case Name 	Actor(s) 	Description
-UC-18 	View Tutor Dashboard 	Tutor 	View overview with stats: new requests, upcoming sessions, total sessions, rating
-UC-19 	View Session Requests 	Tutor 	View list of pending session requests from students
-UC-20 	Accept Session Request 	Tutor 	Approve a student's session request
-UC-21 	Decline Session Request 	Tutor 	Reject a student's session request
-UC-22 	View Confirmed Sessions 	Tutor 	View list of accepted/scheduled sessions
-UC-23 	Start Session 	Tutor 	Begin virtual tutoring session at scheduled time
-UC-24 	View Impact Statistics 	Tutor 	View personal impact metrics (sessions completed, students helped)
-UC-25 	View All Tutor Sessions 	Tutor 	View all sessions (upcoming and completed) in tabbed interface
+**2\. STUDENT MODULE**
 
-4. NAVIGATION MODULE
-Use Case ID 	Use Case Name 	Actor(s) 	Description
-UC-26 	Navigate to Browse Tutors 	Student 	Access tutor browsing page from dashboard
-UC-27 	Navigate to Sessions 	Student, Tutor 	Access sessions management page
-UC-28 	Return to Dashboard 	Student, Tutor 	Navigate back to role-specific dashboard
-UC-29 	Return to Home 	Student, Tutor, Visitor 	Navigate to landing page
-UC-30 	Access Mobile Menu 	Student, Tutor 	Open side navigation on mobile devices
+| **Use Case ID** | **Use Case Name** | **Actor(s)** | **Description** |
+| --- | --- | --- | --- |
+| UC-06 | View Student Dashboard | Student | View overview with stats: upcoming sessions, completed sessions, active tutors |
+| UC-07 | Browse Tutors | Student | View grid of available tutors with their profiles |
+| UC-08 | Search Tutors | Student | Search tutors by name or subject |
+| UC-09 | Filter Tutors by Subject | Student | Filter tutor list by specific STEM subject |
+| UC-10 | View Tutor Profile | Student | View detailed tutor information: bio, subjects, rating, sessions completed, availability |
+| UC-11 | Request Session | Student | Send session request to a tutor for specific subject/topic |
+| UC-12 | View My Sessions | Student | View all sessions (upcoming and completed) in tabbed interface |
+| UC-13 | Join Session | Student | Enter virtual tutoring session at scheduled time |
+| UC-14 | Reschedule Session | Student | Request to change session date/time |
+| UC-15 | Cancel Session | Student | Cancel an upcoming session |
+| UC-16 | Book Session Again | Student | Rebook with same tutor after completed session |
+| UC-17 | Leave Review | Student | Rate and review tutor after completed session |
 
-USE CASE RELATIONSHIPS
+**3\. TUTOR MODULE**
 
-Include Relationships (mandatory sub-use cases)
+| **Use Case ID** | **Use Case Name** | **Actor(s)** | **Description** |
+| --- | --- | --- | --- |
+| UC-18 | View Tutor Dashboard | Tutor | View overview with stats: new requests, upcoming sessions, total sessions, rating |
+| UC-19 | View Session Requests | Tutor | View list of pending session requests from students |
+| UC-20 | Accept Session Request | Tutor | Approve a student's session request |
+| UC-21 | Decline Session Request | Tutor | Reject a student's session request |
+| UC-22 | View Confirmed Sessions | Tutor | View list of accepted/scheduled sessions |
+| UC-23 | Start Session | Tutor | Begin virtual tutoring session at scheduled time |
+| UC-24 | View Impact Statistics | Tutor | View personal impact metrics (sessions completed, students helped) |
+| UC-25 | View All Tutor Sessions | Tutor | View all sessions (upcoming and completed) in tabbed interface |
 
-    UC-03 (Complete Student Profile) includes:
-        Enter basic information
-        Select subjects of interest
-    UC-04 (Complete Tutor Profile) includes:
-        Enter basic information
-        Select subjects to teach
-        Write bio
-    UC-11 (Request Session) includes:
-        UC-10 (View Tutor Profile)
-    UC-13 (Join Session) includes:
-        UC-12 (View My Sessions)
+**4\. NAVIGATION MODULE**
 
-Extend Relationships (optional extensions)
+| **Use Case ID** | **Use Case Name** | **Actor(s)** | **Description** |
+| --- | --- | --- | --- |
+| UC-26 | Navigate to Browse Tutors | Student | Access tutor browsing page from dashboard |
+| UC-27 | Navigate to Sessions | Student, Tutor | Access sessions management page |
+| UC-28 | Return to Dashboard | Student, Tutor | Navigate back to role-specific dashboard |
+| UC-29 | Return to Home | Student, Tutor, Visitor | Navigate to landing page |
+| UC-30 | Access Mobile Menu | Student, Tutor | Open side navigation on mobile devices |
 
-    UC-07 (Browse Tutors) extends to:
-        UC-08 (Search Tutors)
-        UC-09 (Filter Tutors by Subject)
-    UC-12 (View My Sessions) extends to:
-        UC-13 (Join Session)
-        UC-14 (Reschedule Session)
-        UC-15 (Cancel Session)
-        UC-16 (Book Again)
-        UC-17 (Leave Review)
-    UC-19 (View Session Requests) extends to:
-        UC-20 (Accept Session Request)
-        UC-21 (Decline Session Request)
+**USE CASE RELATIONSHIPS**
 
-Generalization Relationships
+**Include Relationships (mandatory sub-use cases)**
 
-    View Dashboard (parent) → UC-06 (Student), UC-18 (Tutor)
-    Manage Sessions (parent) → UC-12 (Student view), UC-22 (Tutor view)
+- **UC-03 (Complete Student Profile)** includes:
+  - Enter basic information
+  - Select subjects of interest
+- **UC-04 (Complete Tutor Profile)** includes:
+  - Enter basic information
+  - Select subjects to teach
+  - Write bio
+- **UC-11 (Request Session)** includes:
+  - UC-10 (View Tutor Profile)
+- **UC-13 (Join Session)** includes:
+  - UC-12 (View My Sessions)
 
-DETAILED SCENARIOS
+**Extend Relationships (optional extensions)**
 
-Scenario 1: Student Finds and Books a Tutor
+- **UC-07 (Browse Tutors)** extends to:
+  - UC-08 (Search Tutors)
+  - UC-09 (Filter Tutors by Subject)
+- **UC-12 (View My Sessions)** extends to:
+  - UC-13 (Join Session)
+  - UC-14 (Reschedule Session)
+  - UC-15 (Cancel Session)
+  - UC-16 (Book Again)
+  - UC-17 (Leave Review)
+- **UC-19 (View Session Requests)** extends to:
+  - UC-20 (Accept Session Request)
+  - UC-21 (Decline Session Request)
 
-Actor: Student
-Precondition: Student has completed profile setup
-Flow:
+**Generalization Relationships**
 
-    Student logs in and views dashboard (UC-06)
-    Student clicks "Browse Tutors" (UC-07)
-    Student filters by subject "Mathematics" (UC-09)
-    Student clicks "View Profile" on a tutor (UC-10)
-    Student clicks "Request a Session" button (UC-11)
-    System sends request to tutor
-    Student receives confirmation notification
+- **View Dashboard** (parent) → UC-06 (Student), UC-18 (Tutor)
+- **Manage Sessions** (parent) → UC-12 (Student view), UC-22 (Tutor view)
 
-Postcondition: Session request is pending tutor approval
+**DETAILED SCENARIOS**
 
-Scenario 2: Tutor Accepts Session and Conducts Tutoring
+**Scenario 1: Student Finds and Books a Tutor**
 
-Actor: Tutor
-Precondition: Student has requested a session
-Flow:
+**Actor:** Student  
+**Precondition:** Student has completed profile setup  
+**Flow:**
 
-    Tutor logs in and views dashboard (UC-18)
-    Tutor sees "2 New Requests" in Session Requests section (UC-19)
-    Tutor reviews student request details
-    Tutor clicks "Accept" button (UC-20)
-    System confirms session and notifies student
-    At session time, tutor clicks "Start Session" (UC-23)
-    Tutor conducts 1-on-1 tutoring
+- Student logs in and views dashboard (UC-06)
+- Student clicks "Browse Tutors" (UC-07)
+- Student filters by subject "Mathematics" (UC-09)
+- Student clicks "View Profile" on a tutor (UC-10)
+- Student clicks "Request a Session" button (UC-11)
+- System sends request to tutor
+- Student receives confirmation notification
 
-Postcondition: Session is completed, statistics updated
+**Postcondition:** Session request is pending tutor approval
 
-Scenario 3: Student Joins and Reviews Session
+**Scenario 2: Tutor Accepts Session and Conducts Tutoring**
 
-Actor: Student
-Precondition: Session has been confirmed by tutor
-Flow:
+**Actor:** Tutor  
+**Precondition:** Student has requested a session  
+**Flow:**
 
-    Student navigates to "My Sessions" (UC-12)
-    Student selects "Upcoming" tab
-    Student clicks "Join Session" at scheduled time (UC-13)
-    Student participates in tutoring
-    After completion, student views "Completed" tab
-    Student clicks "Leave Review" (UC-17)
-    Student rates tutor and submits feedback
+- Tutor logs in and views dashboard (UC-18)
+- Tutor sees "2 New Requests" in Session Requests section (UC-19)
+- Tutor reviews student request details
+- Tutor clicks "Accept" button (UC-20)
+- System confirms session and notifies student
+- At session time, tutor clicks "Start Session" (UC-23)
+- Tutor conducts 1-on-1 tutoring
 
-Postcondition: Review is saved, tutor rating updated
+**Postcondition:** Session is completed, statistics updated
+
+**Scenario 3: Student Joins and Reviews Session**
+
+**Actor:** Student  
+**Precondition:** Session has been confirmed by tutor  
+**Flow:**
+
+- Student navigates to "My Sessions" (UC-12)
+- Student selects "Upcoming" tab
+- Student clicks "Join Session" at scheduled time (UC-13)
+- Student participates in tutoring
+- After completion, student views "Completed" tab
+- Student clicks "Leave Review" (UC-17)
+- Student rates tutor and submits feedback
+
+**Postcondition:** Review is saved, tutor rating updated

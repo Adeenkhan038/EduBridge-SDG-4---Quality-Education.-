@@ -1,16 +1,1 @@
-EduBridge Structure:
-├── Landing Page
-├── Login/Register
-├── Student Dashboard
-│   ├── Browse Tutors
-│   ├── My Sessions
-│   └── My Profile
-├── Tutor Dashboard
-│   ├── My Availability
-│   ├── Booked Sessions
-│   └── My Profile
-└── Coordinator Dashboard
-    ├── Tutor Applications
-    ├── Activity Overview
-    └── Reports
-
+<img width="857" height="457" alt="image" src="https://github.com/user-attachments/assets/85375a71-1adb-4968-9139-b897093998d4" />

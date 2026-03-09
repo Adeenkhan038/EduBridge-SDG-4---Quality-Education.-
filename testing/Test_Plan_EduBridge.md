@@ -39,5 +39,10 @@ Features to be tested:
 
 #7.Testing Schedule
 
--Eg.Testing conductied on:20.March.2026 
+- Eg.Testing conductied on:20.March.2026 
 - Github(version tracking)
+
+#8. After tesing phase
+
+- Checking results and feedbacks from users
+- Adjust the system and test again to see if the system run smoothly without error.

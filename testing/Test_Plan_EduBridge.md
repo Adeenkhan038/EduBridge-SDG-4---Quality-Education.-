@@ -3,7 +3,7 @@
 
 ##1.Introduciton
 
-This document is mainly used for targeting for testing stratergies on EduBridge prototype.
+This document is mainly used for targeting for testing strategies on EduBridge prototype.
 The objective is to ensure that the process runs smoothly and correctly.
 Additionally, it is also to ensure that the function is easy to use for students and tutors.
 

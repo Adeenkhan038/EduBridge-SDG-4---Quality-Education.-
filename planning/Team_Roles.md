@@ -16,7 +16,7 @@ Writes clear user stories and acceptance criteria that feed both the Product Bac
 - Defines personas and stakeholder profiles to ensure the solution focuses on real user problems and constraints (e.g., low bandwidth, limited devices).  
 - Works closely with the Prototype & UI Designer to ensure that wireframes and screen flows accurately reflect the documented requirements.
 
-3. Prototype & UI Designer – []
+3. Prototype & UI Designer – [TEE QIN YI]
 Translates requirements and user stories into low‑fidelity wireframes and then into high‑fidelity prototype screens for the EduBridge interface (student views, tutor views and coordinator views).  
 - Builds the main clickable prototype in a design tool (such as Figma/Canva/Slides), focusing on clear navigation, accessibility and mobile‑friendly layouts for rural students.  
 - Ensures visual consistency and branding across all screens (colours, typography, button styles, spacing) and documents basic UI guidelines for the team.  
@@ -24,7 +24,7 @@ Translates requirements and user stories into low‑fidelity wireframes and then
 - Supports the team in preparing the live demo for the final presentation, choosing a smooth scenario that shows the complete end‑to‑end tutoring flow.
 
 
-  ## 4. Testing & Documentation Lead – []
+  ## 4. Testing & Documentation Lead – [KHUN THAW ZIN HTUN]
   Designs the Test Plan for EduBridge, including functional tasks (e.g., “student finds a tutor and books a slot”) and basic usability checks for the prototype.  
 - Creates and maintains test cases and simple result logs, and coordinates short user‑testing sessions with classmates or target users to collect feedback on the prototype.  
 - Summarises evaluation findings and improvements, documenting which usability issues were discovered and what design changes were made in response.  
